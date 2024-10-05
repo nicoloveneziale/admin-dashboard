@@ -1,0 +1,71 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-rows: repeat(10, 10vh);
+}
+
+header{
+    display: grid;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    grid-area: 1 / 3 / 3 / 11;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: 7vh 13vh;
+    gap: 6px;
+}
+
+header #search{
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+#search-bar{
+    grid-area: 1 / 2 / 1 / 6;
+}
+
+#notification-btn{
+    grid-area: 1 / 7 / 1 / 7;
+}
+
+#profile-picture-small{
+    grid-area: 1 / 8 / 1 / 8;
+}
+
+#name{
+    grid-area: 1 / 9 / 1 / 9;
+}
+
+#profile-picture{
+    grid-area: 2 / 1 / 2 / 3;
+    background-color: red;
+}
+
+#welcome{
+    grid-area: 2 / 3 / 2 / 6;
+}
+
+#content-buttons{
+    grid-area: 2 / 7 / 2 / 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#side-bar{
+    grid-area: 1 / 1 / 11 / 3;
+    display:grid;
+    background-color: rgb(125, 125, 230);
+}
+
+#main-content{
+    background-color: rgb(235, 234, 248);
+    grid-area: 3 / 3 / 11 / 11;
+    display: grid;
+    padding: 4px;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+}
