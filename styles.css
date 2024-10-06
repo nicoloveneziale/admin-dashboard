@@ -25,31 +25,54 @@ header{
 
 header #search{
     grid-area: 1 / 1 / 1 / 1;
+    background: none;
+    border: none;
+    color: #dcfce7;
 }
 
 #search-bar{
     grid-area: 1 / 2 / 1 / 6;
+    height: 3vh;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-top: 15px;
+    border: 3px #052e16 solid;
 }
 
 #notification-btn{
     grid-area: 1 / 7 / 1 / 7;
+    background: none;
+    border: none;
+    color: #dcfce7;
 }
 
 #profile-picture-small{
     grid-area: 1 / 8 / 1 / 8;
+    background: none;
+    border: none;
+    color: #dcfce7;
 }
 
 #name{
     grid-area: 1 / 9 / 1 / 9;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 #profile-picture{
     grid-area: 2 / 1 / 2 / 3;
-    background-color: red;
+    background: none;
+    border: none;
+    color: #dcfce7;
 }
 
 #welcome{
     grid-area: 2 / 3 / 2 / 6;
+}
+
+#welcome-name{
+    font-size: 20px;
+    font-weight: 700;
 }
 
 #content-buttons{
@@ -59,6 +82,16 @@ header #search{
     align-items: center;
 }
 
+#content-buttons button{
+    border: none;
+    background-color: #052e16;
+    font-size: 18px;
+    border-radius: 14px;
+    height: 5vh;
+    width: 7vw;
+    color: #dcfce7;
+}
+
 #side-bar{
     grid-area: 1 / 1 / 11 / 3;
     display:grid;
@@ -66,10 +99,13 @@ header #search{
     grid-template-rows: repeat(10 , 10vh);
     grid-template-columns: 5vw 25vw;
     row-gap: 15px;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 #logo-container{
-    grid-area: 1 / 1 / 1 / 2;
+    grid-area: 1 / 2 / 1 / 2;
     font-size: 0.6rem;
     display: flex;
     justify-content: start;
@@ -114,20 +150,19 @@ header #search{
     background-color: #dcfce7;
     grid-area: 3 / 3 / 11 / 11;
     display: grid;
-    gap: 4px;
-    padding: 4px;
-    grid-template-columns: repeat(10, 10%);
+    gap: 2vw;
+    padding: 0.5vw;
+    grid-template-columns: repeat(14, 5%);
     grid-template-rows: repeat(10, 10%);
 }
 
 #project-container{
-    grid-area: 2 / 1 / 11 / 8;
+    grid-area: 2 / 1 / 8 / 11;
     display: grid;
     grid-template-rows: 25% 25% 25%;
     grid-template-columns: 45% 45%;
     gap: 15px;
-    padding: 20px;
-    font-size: 10px;
+    font-size: 1rem;
 }
 
 .project{
@@ -143,12 +178,52 @@ header #search{
 
 
 #announcements-container{
-    grid-area: 2 / 8 / 5 / 10;
+    grid-area: 2 / 10 / 5 / 14;
     background-color: #15803d;
     color: #dcfce7;
-    font-size: 10px;
-    padding: 4px;
+    font-size: 0.8rem;
+    padding: 0.5vw;
     border-radius: 7px;
+}
+
+#trending{
+    grid-area: 5 / 10 / 7 / 14;
+    background-color: #15803d;
+    color: #dcfce7;
+    font-size: 0.8rem;
+    padding: 0.5vw;
+    border-radius: 7px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    margin: 1px;
+}
+
+.trending-project{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin: 2px;
+    padding: 2px;
+}
+
+#a-tag{
+    grid-area: 1 / 10 / 1 / 10;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#p-tag{
+    grid-area: 1 / 1 / 1 / 2;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+#username{
+    font-weight: 900;
 }
 
 
